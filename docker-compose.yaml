@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  postgresql-data:
+    image: postgres:16.2-alpine3.19
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=test
+    ports:
+      - "9797:5432"
